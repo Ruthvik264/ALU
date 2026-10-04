@@ -82,9 +82,3 @@ the testbench pane, and select QuestaSim.
 [SCO][PASS] ADD | a=7 b=4 | y=11 carry=0 zero=0
 ```
 
-## Possible improvements
-
-- Increase the number of random vectors to cover every opcode
-- Add constraints for corner cases (for example `a == b` for SUB)
-- Add pass/fail counters and a summary at the end of the run
-- Add functional coverage
