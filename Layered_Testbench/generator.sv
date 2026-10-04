@@ -10,7 +10,7 @@ class generator;
   
   
   task main();
-    repeat(8)
+    repeat(100)
       begin
         trans=new();
         trans.randomize();
