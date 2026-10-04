@@ -9,7 +9,7 @@ class monitor;
 
   task main;
     transaction trans;
-    repeat(8)
+    repeat(100)
       begin
         #3;
         trans = new();
