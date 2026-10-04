@@ -1,8 +1,10 @@
 `include "transaction.sv"
+`include "coverage.sv"
 `include "generator.sv"
 `include "driver.sv"
 `include "monitor.sv"
 `include "scoreboard.sv"
+
 
 
 class environment;
@@ -33,12 +35,12 @@ class environment;
       scb.main();
     join
   endtask
-  
-  
+
   task run;
-    test();
-    $finish;
-  endtask
+  test();
+  scb.report();
+  $finish;
+endtask
   
 endclass
     
